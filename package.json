@@ -1,0 +1,27 @@
+{
+  "name": "tsandu-automation",
+  "version": "0.1.2",
+  "description": "Tsandu Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gerardocorsan@github.com/corsanhub/tsandu-automation.git"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "keywords": [
+    "tsandu",
+    "esp8266",
+    "automation"
+  ],
+  "author": "Gerardo Corsan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/corsanhub/tsandu-automation/issues"
+  },
+  "homepage": "https://github.com/corsanhub/tsandu-automation#readme"
+}
