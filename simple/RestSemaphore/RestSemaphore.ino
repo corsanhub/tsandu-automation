@@ -17,6 +17,7 @@ void allOff(){
   digitalWrite(D7, LOW);
   digitalWrite(D8, LOW);
 }
+
 void initialize() {
   Serial.print("Initializing data ports ...\n");
 
