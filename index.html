@@ -80,24 +80,29 @@
             box-shadow: 0 5px #666;
             transform: translateY(4px);
         }
+
+        .button_div {
+            text-align: center;
+            padding-top: 1.5%;
+        }
     </style>
     <script>
         function swap(id) {
             if (id == 'green') {
                 const userAction = async () => {
-                    const response = await fetch('http://localhost:3000/swapStatus?elem=green');
+                    const response = await fetch('swapStatus?elem=green');
                     console.log(response);
                 }
                 userAction();
             } else if (id == 'yellow') {
                 const userAction = async () => {
-                    const response = await fetch('http://localhost:3000/swapStatus?elem=yellow');
+                    const response = await fetch('swapStatus?elem=yellow');
                     console.log(response);
                 }
                 userAction();
             } else if (id == 'red') {
                 const userAction = async () => {
-                    const response = await fetch('http://localhost:3000/swapStatus?elem=red');
+                    const response = await fetch('swapStatus?elem=red');
                     console.log(response);
                 }
                 userAction();
@@ -108,13 +113,12 @@
 </head>
 
 <body>
-    <p class="mxz">Ligth Master at your service</p>
-    <p align="center">
-        <button class="button_green" align="center" onclick="swap('green')">Swap Green</button>&nbsp;
-        <button class="button_yellow" align="center" onclick="swap('yellow')">Swap Yellow</button>&nbsp;
-        <button class="button_red" align="center" onclick="swap('red')">Swap Red</button>&nbsp;
-
-    </p>
+    <div class="mxz">Ligth Manager</div>
+    <div class="button_div"><button class="button_green" align="center" onclick="swap('green')">Swap Green</button>
+    </div>
+    <div class="button_div"><button class="button_yellow" align="center" onclick="swap('yellow')">Swap Yellow</button>
+    </div>
+    <div class="button_div"><button class="button_red" align="center" onclick="swap('red')">Swap Red</button></div>
 </body>
 
 </html>
