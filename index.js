@@ -36,7 +36,8 @@ app.get('/swapStatus', (req, res) => {
     console.log("currentStatus: " + currentStatus);
     console.log("newStatus    : " + newStatus);
 
-    url = "http://192.168.1.107/op=cs?id=" + id + "&action=" + newStatus;
+//    url = "http://192.168.1.140/op=cs?id=" + id + "&action=" + newStatus;
+    url = "http://192.168.1.140/operation=CHANGE_STATUS?id=LOCK-01&action=OPEN";
 
     request.post(url, {
         json: {
